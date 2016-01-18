@@ -1,4 +1,4 @@
-Darknet-App
-===========
+Hector Sensor App
+=================
 
 
