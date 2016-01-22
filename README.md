@@ -1,9 +1,11 @@
-Hector Sensor App
+HECTOR Sensor App
 =================
 
 Python scripts written to process darknet sensor data from HECTOR.
 
 This project is being developed as an intelligence component of the HECTOR project.
+
+
 
 ## Security Intelligence ##
 
@@ -49,3 +51,8 @@ and even incident reporting.
 ## Download HECTOR ##
 
 https://github.com/madirish/hector
+
+## About HECTOR Sensor App ##
+
+ToDo
+
