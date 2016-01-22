@@ -4,10 +4,11 @@
 # subtract day XX5 from day XX4 for that day's total.
 
 # The location of HECTOR
-HECTORSCRIPTS="/opt/hector/app/scripts"
-cd ${HECTORSCRIPTS}
+HECTORSCRIPTSDIR="/opt/hector/app/scripts"
+cd ${HECTORSCRIPTSDIR}
 
 # Create the results directory if it does not exist
+# - this will only work if the cd command (3 lines above) is present
 if [ ! -d darknet-results ]
 then
   echo "[ ] directory: darknet-results does not exist.. creating."
@@ -24,15 +25,15 @@ while [ $getday -gt "1" ]
 do
   getday=$(($getday-1))
   # Name files so they appear sequentially (could use case)
+  if [ $getday -lt "10" ]
+  then
+    ofile="dn00${getday}.csv"
+  fi
   if [ $getday -lt "100" ]
   then
     ofile="dn0${getday}.csv"
   else
     ofile="dn${getday}.csv"
-  fi
-  if [ $getday -lt "10" ]
-  then
-    ofile="dn00${getday}.csv"
   fi
 
   # Call the report script and save to $ofile
