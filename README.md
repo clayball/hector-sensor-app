@@ -6,7 +6,6 @@ Python scripts written to process darknet sensor data from HECTOR.
 This project is being developed as an intelligence component of the HECTOR project.
 
 
-
 ## Security Intelligence ##
 
 Security is more than just a vulnerability report or a code review. Security intelligence
@@ -54,5 +53,12 @@ https://github.com/madirish/hector
 
 ## About HECTOR Sensor App ##
 
-ToDo
+TODO:
+
+Track darknet probes over time.
+
+- Generate darknet probe data files from csv files.
+
+
+
 
