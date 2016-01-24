@@ -1,2 +1,3 @@
 results/*.csv
 .idea/*
+results/nmap/nmap-results/*.*ml
